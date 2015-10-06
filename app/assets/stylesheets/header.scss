@@ -1,0 +1,25 @@
+#header{
+	background:rgba(1,1,1,1);
+	height:100px;
+	color:white;
+
+
+
+	nav{
+		float:right;
+		ul{
+			display:inline-block;
+			list-style:none;
+			li{
+				display:inline-block;
+				a{
+					color:white;
+				}
+
+				a:hover{
+
+				}
+			}
+		}
+	}
+}
