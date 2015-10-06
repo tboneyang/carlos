@@ -1,8 +1,19 @@
 #header{
-	background:rgba(1,1,1,1);
-	height:100px;
-	color:white;
+	background:rgba(1,1,1,0.1);
+	height:90px;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
 
+	#mainlogo{
+		line-height:90px;
+		font-size:36px;
+		float:left;
+		font-weight:200;
+		color:#333;
+
+	}
 
 
 	nav{
@@ -12,12 +23,19 @@
 			list-style:none;
 			li{
 				display:inline-block;
+				margin-left:50px;
 				a{
-					color:white;
+					color:#333;
+					line-height:100px;
+					text-decoration:none;
+					text-transform:uppercase;
+					letter-spacing:1px;
+					font-weight:100;
 				}
 
 				a:hover{
-
+					color:#111;
+					background:none;
 				}
 			}
 		}
