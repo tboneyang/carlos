@@ -1,7 +1,76 @@
 #homelanding{
 	height:100vh;
 	width:100%;
-	background:#1ff;
-	background-size:cover;
-	background-image: image-url("/city.jpg");
+	background-image: image-url("/carlosfinal2.jpg");
+	background-size:600px;
+	background-repeat:no-repeat;
+	background-position:center 80px;
+	//-webkit-filter: grayscale(100%);
+	//#39ac9d;
+	position:relative;
+
+
+
+	.bottombox{
+		position:absolute;
+		left:0px;
+		bottom:0px;
+		text-align:center;
+		width:100%;
+		height:20px;
+		background: rgba(255,255,255,0.7);
+		overflow:hidden;
+		padding-bottom:10px;
+		padding-top:10px;
+
+		a{
+		text-decoration:none;
+		color:black;
+		font-weight:400;
+		letter-spacing:1px;
+
+		img{
+			height:10px;
+		}
+		}
+		a:hover{
+			background:none;
+			color:black;
+			text-decoration:none;
+			transform:scale(1.05);
+		}
+
+	}
 }
+
+.hidden{
+	visibility:hidden;
+}
+
+h1{
+	text-align:center;
+	padding-top:40px;
+	padding-bottom:40px;
+	border-bottom: 1px solid #eee;
+}
+
+.row{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+
+.bigquote{
+	font-family:proxima-nova;
+	font-weight:200;
+	color: rgb(66, 101, 125);
+	border-left:10px solid rgb(66, 101, 125);
+	padding-left:26px;
+	margin-top:26px;
+	padding-top:10px;
+	font-style:italic;
+	font-size:39px;
+	padding-bottom:14px;
+	margin-bottom:30px;
+	line-height:1.1;
+	margin-left:2px;
+	}

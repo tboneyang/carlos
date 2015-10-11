@@ -15,7 +15,6 @@
 ( function( window ) {
 
 
-
 // -------------------------- utils -------------------------- //
 
 var slice = Array.prototype.slice;
