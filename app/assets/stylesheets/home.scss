@@ -1,6 +1,6 @@
 #homelanding{
 	height:100vh;
-	width:100%;
+	min-width:100%;
 	background-image: image-url("/carlosfinal2.jpg");
 	background-size:600px;
 	background-repeat:no-repeat;
@@ -47,25 +47,32 @@
 	visibility:hidden;
 }
 
-h1{
-	text-align:center;
-	padding-top:40px;
-	padding-bottom:40px;
-	border-bottom: 1px solid #eee;
+td{
+	image{
+		max-width:100%;
+	}
 }
+
+
 
 .row{
 	padding-top:30px;
 	padding-bottom:30px;
+	font-size:18px;
+	line-height:1.5;
+}
+
+.padtop{
+	//padding-top:60px;
 }
 
 .bigquote{
 	font-family:proxima-nova;
 	font-weight:200;
-	color: rgb(66, 101, 125);
-	border-left:10px solid rgb(66, 101, 125);
+	color: #39ac9d;
+	border-left:10px solid #39ac9d;
 	padding-left:26px;
-	margin-top:26px;
+	//margin-top:26px;
 	padding-top:10px;
 	font-style:italic;
 	font-size:39px;
@@ -74,3 +81,57 @@ h1{
 	line-height:1.1;
 	margin-left:2px;
 	}
+
+
+
+#about{
+	img{
+		width:100%;
+	}
+	h1{
+	text-align:center;
+	padding-top:40px;
+	padding-bottom:40px;
+	border-bottom: 1px solid #eee;
+	background: #39ac9d;
+	color:White;
+	}
+	div{
+		div{
+			font-size:20px;
+			line-height:2;
+		}
+	}
+}
+
+.caption{
+	font-style:italic;
+	//font-weight:bold;
+	font-size:15px;
+}
+
+
+#art{
+	h1{
+		width:100%;
+		text-align:center;
+		padding-top:40px;
+		padding-bottom:40px;
+		border-bottom: 1px solid #eee;
+		background: #39ac9d;
+		color:White;
+	}
+}
+
+#contact{
+	padding-bottom:60px;
+	h1{
+		width:100%;
+		text-align:center;
+		padding-top:40px;
+		padding-bottom:40px;
+		border-bottom: 1px solid #eee;
+		background: #39ac9d;
+		color:White;
+	}
+}
