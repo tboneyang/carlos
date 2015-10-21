@@ -1,21 +1,47 @@
-/*$(function(){
-
-  $('#masonry-grid').masonry({
-    itemSelector: '.grid-item',
-    columnWidth: 300,
-    gutterWidth: 40
-  });
-
-
-
-  var $container = $('#masonry-grid');
-	$container.infinitescroll({
-    // infinite scroll options...
-  },
-  // trigger Masonry as a callback
-  function( newElements ) {
-    var $newElems = $( newElements );
-    $container.masonry( 'appended', $newElems );
+var content = function() {
+  /*
+  var options = {
+    itemSelector: ".grid-item",
+    isAnimated: true,
+    layoutPriorities:{
+      upperPosition: 1,
+      shelfOrder: 1
+    }
   }
-);
-});*/
+
+  $container = $("#grid").masonry(options);
+  */
+}
+
+  // or with jQuery
+  var $grid;
+
+  function triggerMasonry() {
+  // don't proceed if $grid has not been selected
+  if ( !$grid ) {
+    return;
+  }
+  // init Masonry
+  $grid.masonry({
+    // options...
+    itemSelector: ".grid-item",
+    isAnimated: true,
+    layoutPriorities:{
+      upperPosition: 1,
+      shelfOrder: 1
+    }
+  });
+// trigger masonry on document ready
+$(function(){
+  $grid = $('#grid');
+  triggerMasonry();
+});
+// trigger masonry when fonts have loaded
+Typekit.load({
+  active: triggerMasonry,
+  inactive: triggerMasonry
+});
+};
+
+$(document).on('page:load', triggerMasonry);
+$(document).ready(triggerMasonry);

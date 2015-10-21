@@ -28,11 +28,18 @@
 				font-weight:100;
 				a{
 					color:#333;
-					line-height:100px;
 					text-decoration:none;
 					text-transform:uppercase;
 					letter-spacing:3px;
+					line-height:100px;
+					position:relative;
 					//
+					img{
+						position:absolute;
+						height:60px;
+						left:-90px;
+						top:-30px;
+					}
 				}
 
 				a:hover{

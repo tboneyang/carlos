@@ -44,13 +44,6 @@
 
 <img src="/nature.JPG">
 <p class="caption">One of Salvo's favorite homeland destinations in Chile, South America - 2014.</p>
-
-
-
-
-
-
-
  As a troubadour, Carlos builds his pieces completely. He begins with fine woods used in classical guitar construction to create his own unique instrument, which can best release his music. The verses of his songs are his poems, which are set to original melodies. He has performed at Duke University, Kenan Stadium, The University of North Carolina at Chapel Hill, University of California at Berkeley, La Pena Cultural Center, and Elizabethtown Community College in Kentucky.  Carlos was chosen in 1993 and 1994 by the North Carolina Arts Council as one of the state's top three songwriters.  In recognition of his original works, he was also awarded an Emerging Artists grant from the Durham Arts Council in 1994.  Carlos used his award to travel to Cuba in order to meet those artists who most inspire his music.  He studied with Chucho Valdes at the National School of the Arts in Havana, and finally met his long time idol Silvio Rodriguez.  He also met Annabell Lopez, and conversation soon turned to ideas of duets, an album, and a tour in the United States.   In addition to recording the album "Florilegios" with Lopez, Carlos also recorded with pianist Emilio Vega and guitarist Julian Fernandez, members of the group "Diakara" (with Silvio Rodriguez) from 1990-93 and later members of the group "Irakere".
 </div>
 </div>
@@ -58,11 +51,13 @@
 
 <div id="art">
   <h1>Artwork</h1>
-  <div class="container">
-    <h5>Pictures of Metalwork, Jewelry, Crafts, and Boat Construction coming soon!</h5>
+  <div id="grid">
+      <% @works.each do |work| %>
+          <div class="grid-item"><%= image_tag work.image_url.to_s %></div>
+      <% end %>
   </div>
-
 </div>
+
 
 <div id="contact">
   <h1>Contact</h1>
@@ -72,37 +67,3 @@
     <h2>919-260-4432</h2>
   </div>
 </div>
-<!--
-<div class="container">
-<h1>Listing Works</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Title</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @works.each do |work| %>
-      <tr>
-        <td><%= image_tag work.image_url.to_s %></td>
-        <td><%= work.category %></td>
-        <td><%= work.title %></td>
-        <td><%= link_to 'Show', work %></td>
-        <td><%= link_to 'Edit', edit_work_path(work) %></td>
-        <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Work', new_work_path %>
-</div>
-
-
-BUILD A READ MORE BUTTON???-->

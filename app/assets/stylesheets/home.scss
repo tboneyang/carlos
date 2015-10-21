@@ -120,11 +120,15 @@ td{
 		border-bottom: 1px solid #eee;
 		background: #39ac9d;
 		color:White;
+		margin-bottom:0px;
 	}
 }
 
 #contact{
 	padding-bottom:60px;
+	img{
+	float:left;
+	}
 	h1{
 		width:100%;
 		text-align:center;
@@ -133,5 +137,9 @@ td{
 		border-bottom: 1px solid #eee;
 		background: #39ac9d;
 		color:White;
+	}
+	h2{
+	float:left;
+	padding:20px;
 	}
 }

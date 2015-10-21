@@ -1,4 +1,13 @@
-.grid-item { 
-	//width: 200px; 
-	border:1px solid red;
+#grid{
+	overflow:auto;
+	div{
+		max-width:33.333333%;
+		float: left;
+		height:auto;
+		//max-height:400px;
+		img{
+			width:100%;
+			display:block;
+		}
+	}
 }

@@ -1,6 +1,11 @@
 class WorksController < ApplicationController
   before_action :set_work, only: [:show, :edit, :update, :destroy]
 
+
+
+  def special
+    @works = Work.all
+  end
   # GET /works
   # GET /works.json
   def index
