@@ -6,11 +6,13 @@
 	left:0;
 	top:0;
 	width:100%;
+	clear:both;
 
 	#mainlogo{
-		line-height:100px;
+		position:absolute;
 		font-size:56px;
-		float:left;
+		left:0px;
+		top:10px;
 		font-weight:100;
 		color:#333;
 
@@ -37,10 +39,8 @@
 					
 				}
 				img{
-						position:absolute;
-						height:60px;
-						left:-90px;
-						top:-30px;
+					width:70px;
+					//border:1px solid red;
 				}
 
 				a:hover{
